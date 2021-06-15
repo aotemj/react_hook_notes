@@ -1,17 +1,16 @@
-import React, {useState} from 'react';
+import React, {useState} from 'react'
 
-export default function UseState(props) {
-  const [count, setCount] = useState(() => {
-    return 0
-  })
-  console.log("render")
-  return (
-    <div>
-      {count}
-      <button onClick={() => {
-        setCount(count => count + 1)
-      }}>+1
-      </button>
+const UseState = () => {
+    // 结构赋值
+    const [clickTimes, setClickTimes] = useState(0)
+
+    const handleClick = () => {
+        setClickTimes(clickTimes + 1)
+    }
+    return <div>
+        <h3>useState </h3>
+        you click button {clickTimes} times
+        <button onClick={handleClick}>点击</button>
     </div>
-  )
 }
+export default UseState

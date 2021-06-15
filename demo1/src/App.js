@@ -1,5 +1,8 @@
 import React, {Component} from 'react';
-import UseMemoDemo2 from "./useMemoDmeo2";
+// import UseMemoDemo2 from "./useMemoDmeo2";
+import NormalComponent from './normal'
+import UseState from './use_state'
+import UseStateAsync from "./useStateAsync";
 // import MemoDemo from "./Memo";
 // import UseState from "./use_state";
 // import UseEffect from "./UseEffects";
@@ -10,18 +13,20 @@ import UseMemoDemo2 from "./useMemoDmeo2";
 
 class App extends Component {
 
-  render() {
-    return (<div>
-      {/*<ContextDemo/>*/}
-      {/*<LazyDemo/>*/}
-      {/*<MemoDemo/>*/}
-      {/*<UseState/>*/}
-      {/*<UseEffect/>*/}
-      {/*<Context1/>*/}
-      {/*<UseMemo/>*/}
-      <UseMemoDemo2/>
-    </div>);
-  }
+    render() {
+        return (<div>
+            <NormalComponent/>
+            <UseState/>
+            <UseStateAsync/>
+            {/*<ContextDemo/>*/}
+            {/*<LazyDemo/>*/}
+            {/*<MemoDemo/>*/}
+            {/*<UseEffect/>*/}
+            {/*<Context1/>*/}
+            {/*<UseMemo/>*/}
+            {/*<UseMemoDemo2/>*/}
+        </div>);
+    }
 }
 
 export default App;
