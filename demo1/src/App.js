@@ -6,7 +6,8 @@ import React, {Component} from 'react';
 // import {BrowserRouter as Router, Route, Link} from 'react-router-dom'
 // import UseEffect from "./UseEffects";
 // import UseEffect2 from "./UseEffect2";
-import UseContextComponent from "./UseContext";
+// import UseContextComponent from "./UseContext";
+import UseReducerComponent from './UseReducer.tsx'
 // import MemoDemo from "./Memo";
 // import UseState from "./use_state";
 // import UseEffect from "./UseEffects";
@@ -19,7 +20,8 @@ class App extends Component {
 
     render() {
         return (<div>
-            <UseContextComponent/>
+            {/*<UseContextComponent/>*/}
+            <UseReducerComponent/>
             {/*<NormalComponent/>*/}
             {/*<UseState/>*/}
             {/*<UseStateAsync/>*/}
